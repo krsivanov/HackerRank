@@ -10,18 +10,19 @@ sorted_class = sorted(the_class, key= lambda x: (x[1], x[0] ))
 result = []
 while True:
     counter = 0
-    if sorted_class[0][counter]==sorted_class[0][counter+1]:
-        counter += 1
+    if sorted_class[counter][1]==sorted_class[counter+1][1]:
+        counter+=1
         continue
     else:
-        if sorted_class[0][counter]== sorted_class[0][counter+1]:
-            result.append(sorted_class[0][counter])
-            result.append(sorted_class[0][counter+1])
+        counter+=1
+        if sorted_class[counter][1]== sorted_class[counter+1][1]:
+            result.append(sorted_class[counter][0])
+            result.append(sorted_class[counter+1][0])
             counter +=1
-            continue
+            break
         else:
-            result.append(sorted_class[0][counter])
+            counter+=1
+            result.append(sorted_class[counter][0])
             break
 
-
-print(result)
+[print(x) for x in result]
