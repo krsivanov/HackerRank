@@ -29,3 +29,26 @@ while True:
                 break
 
 [print(x) for x in result]
+
+
+# tests 
+# 4
+# Prashant
+# 32
+# Pallavi
+# 36
+# Dheeraj
+# 39
+# Shivam
+# 40
+
+
+# 4
+# Rachel
+# -50
+# Mawer
+# -50
+# Sheen
+# -50
+# Shaheen
+# 51
